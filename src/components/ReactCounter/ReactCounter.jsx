@@ -8,26 +8,26 @@ const ReactCounter = () => {
     return (
         <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
             <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2  m-7 bg-transparent w-full mx-auto">
-                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition hover:scale-105">
+                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition">
                     <h1 className="text-5xl font-bold text-center">
                         {counterOn && <CountUp start={0} end={175}
                         duration={2} delay={0}></CountUp>}+
                     </h1>
                     <h4 className="text-xl text-center">Running Students</h4>
                 </div>
-                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition hover:scale-105 border border-x-white">
+                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition border border-x-white">
                     <h1 className="text-5xl font-bold text-center">
                         {counterOn && <CountUp start={0} end={98} duration={2} delay={0}></CountUp>}%
                     </h1>
                     <h4 className="text-xl text-center">Satisfaction Rate</h4>
                 </div>
-                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition hover:scale-105 border border-r-1">
+                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition border border-r-1">
                     <h1 className="text-5xl font-bold text-center">
                         {counterOn && <CountUp start={0} end={92} duration={2} delay={0}></CountUp>}%
                     </h1>
                     <h4 className="text-xl text-center">Increase in Grades</h4>
                 </div>
-                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition hover:scale-105">
+                <div className="bg-[#dbc13d] text-white p-8 space-y-3 transform transition">
                     <h1 className="text-5xl font-bold text-center">
                         {counterOn && <CountUp start={0} end={4.9} duration={2} delay={0}></CountUp>}
                     </h1>
